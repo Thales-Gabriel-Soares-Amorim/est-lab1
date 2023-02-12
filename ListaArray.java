@@ -14,20 +14,28 @@ public class ListaArray implements EstruturaDeDados{
 
     @Override
     public boolean search(int chave) {
-        // TODO Auto-generated method stub
+        
         return false;
     }
 
     @Override
     public int minimum() {
-        // TODO Auto-generated method stub
-        return 0;
+        if (inicio == null){
+            return 0;
+        }
+        else {
+            return min(inicio);
+        }
     }
 
     @Override
     public int maximum() {
-        // TODO Auto-generated method stub
-        return 0;
+        if (inicio == null){
+            return 0;
+        }
+        else {
+            return max(inicio);
+        }
     }
 
     @Override
